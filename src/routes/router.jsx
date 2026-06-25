@@ -17,6 +17,11 @@ import PaymentCancel from "../pages/Dashboard/payment/PaymentCancel";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 import ApproveRiders from "../pages/Dashboard/ApproveRiders/ApproveRiders";
 import UsersManagement from "../pages/Dashboard/UsersManagement/UsersManagement";
+import AdminRoute from "./AdminRoute";
+import AssignRiders from "../pages/Dashboard/AssignRiders";
+import RiderRoute from "./RiderRoute";
+import AssignDeliveries from "../pages/Dashboard/AssignDeliveries/AssignDeliveries";
+import CompletedDeliveries from "../pages/Dashboard/CompletedDeliveries/CompletedDeliveries";
 
 export const router = createBrowserRouter([
   {
@@ -90,13 +95,34 @@ export const router = createBrowserRouter([
          path:'payment-cancel',
         Component: PaymentCancel
       },
+      // Rider related route
+      {
+        path: 'assigned-deliveries',
+        element: <RiderRoute>
+          <AssignDeliveries></AssignDeliveries>
+        </RiderRoute>
+      },
+       {
+        path: 'completed-deliveries',
+        element: <RiderRoute>
+          <CompletedDeliveries></CompletedDeliveries>
+        </RiderRoute>
+      },
+      // Admin releated route
       {
         path: 'approve-riders',
-        Component: ApproveRiders
+       element: <AdminRoute><ApproveRiders></ApproveRiders></AdminRoute>
       },
       {
+        path: 'assign-riders',
+       element: <AdminRoute><AssignRiders></AssignRiders></AdminRoute>
+      },
+      
+      {
         path: 'users-management',
-        Component: UsersManagement
+        element: <AdminRoute>
+          <UsersManagement></UsersManagement>
+        </AdminRoute>
       }
     ]
   }

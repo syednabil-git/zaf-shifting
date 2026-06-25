@@ -49,7 +49,8 @@ const ApproveRiders = () => {
         <th>Name</th>
         <th>Email</th>
         <th>District</th>
-         <th>Status</th>
+         <th>Appication Status</th>
+         <th>Work Status</th>
           <th>Actions</th>
       </tr>
     </thead>
@@ -67,6 +68,7 @@ const ApproveRiders = () => {
 
             </p>
            </td>
+           <td>{rider.workStatus}</td>
            <td>
             <button className='btn'>
                   <FaEye />
