@@ -95,7 +95,7 @@ const Register = () => {
             {errors.password?.type === 'minLength' && <p className='text-red-500'>Password must be 6 characters or longer</p>}
              {errors.password?.type === 'pattern' && <p className='text-red-500'>Password must contain at least 8 characters, one uppercase, one lowercase, one number, and one special character.</p>}
           <div><a className="link link-hover">Forgot password?</a></div>
-          <button className="btn btn-neutral mt-4">Login</button>
+          <button className="btn btn-neutral mt-4">Register</button>
         </fieldset>
          <p>Already have an account? please <Link state={location.state} className='text-blue-500 underline' to='/login'>login</Link></p>
         </form> 

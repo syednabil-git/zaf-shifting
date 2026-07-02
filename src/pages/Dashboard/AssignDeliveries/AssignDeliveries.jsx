@@ -17,6 +17,7 @@ const AssignDeliveries = () => {
     })
 
     const handleDeliveryStatusUpdate = (parcel, status) => {
+      console.log(parcel);
       const statusInfo = {
         deliveryStatus: status,
         riderId: parcel.riderId,
@@ -75,7 +76,7 @@ const AssignDeliveries = () => {
             
         </td>
         <td>
-           <button onClick={ () => handleDeliveryStatusUpdate(parcel, 'parcel_picked_up')} className='btn btn-primary text-black'>
+           <button onClick={ () => handleDeliveryStatusUpdate(parcel, 'in_delivery')} className='btn btn-primary text-black'>
                 Mark as Picked Up
             </button>
             <button onClick={ () => handleDeliveryStatusUpdate(parcel, 'parcel_delivered')} className='btn btn-primary text-black ml-2 bg-red-500'>
