@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "zap-shift-48d47",
+    "prod": "zap-shift-48d47"
+  },
+  "targets": {},
+  "etags": {}
+}
