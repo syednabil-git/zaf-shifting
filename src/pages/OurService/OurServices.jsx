@@ -5,7 +5,7 @@ const OurServices = () => {
     <div className='bg-[#03373D] py-15 px-10 max-w-7xl mx-auto rounded-2xl my-15'>
         <h1 className='text-4xl font-bold text-white text-center'>Our Services</h1>
         <p className='text-center mb-8 mt-2 text-gray-300'>Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to <br></br> business shipments — we deliver on time, every time.</p>
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
            <div className='rounded-2xl p-5 items-center bg-white'>
              <div className='flex items-center justify-center my-5'><img src={logo}></img></div>
              <h1 className='text-center text-xl font-semibold mb-5'>Express  & Standard Delivery</h1>

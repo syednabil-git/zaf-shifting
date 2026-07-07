@@ -39,9 +39,9 @@ const Rider = () => {
       })
     }
   return (
-    <div>
-        <h2 className='font-bold text-4xl'>Be a Rider</h2>
-         <form onSubmit={handleSubmit(handleRiderApplication)} className='mt-12 p-4 text-black'>
+    <div className='p-5'>
+        <h2 className='font-bold text-4xl mt-5'>Be a Rider</h2>
+         <form onSubmit={handleSubmit(handleRiderApplication)} className='mt-5 px-10 text-black'>
                
                 {/* two colum */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>

@@ -3,7 +3,7 @@ import logo from '../../assets/bookingIcon.png'
 const Work = () => {
   return (
     <div className='max-w-6xl mx-auto'>
-      <div className='flex justify-start items-center gap-2 py-5'>
+      <div className='flex flex-col md:flex-row gap-4 '>
         <div className='rounded-2xl bg-white p-5 items-center w-3xl'>
         <img src={logo}></img>
         <h1 className='font-bold text-xl mt-5 mb-5'>Booking Pick & Drop</h1>

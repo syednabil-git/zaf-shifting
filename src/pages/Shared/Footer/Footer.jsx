@@ -7,12 +7,12 @@ export const Footer = () => {
         <footer className="footer footer-horizontal footer-center text-secondary p-10 bg-black text-white">
   <aside>
     <Logo></Logo>
-    <p className="font-bold text-gray-400">
+    <p className="font-bold text-gray-400 text-sm md:text-base leading-7 text-center md:text-left max-w-md md:max-w-2xl mx-auto md:mx-0">
       Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. 
-      From personal packages to <br></br> business shipments — 
+      From personal packages to business shipments — 
       we deliver on time, every time.
     </p>
-    <div className='flex justify-between items-center gap-10 my-10 font-semibold'>
+    <div className='flex flex-col md:flex-row justify-between items-center gap-10 my-10 font-semibold'>
       <p>Services</p>
       <p>Coverage</p>
       <p>About Us</p>

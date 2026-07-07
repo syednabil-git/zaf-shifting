@@ -76,9 +76,9 @@ const SendParcel = () => {
                       });
     }
   return (
-    <div>
-            <h2 className='text-4xl font-bold'>Send A Parcel</h2>
-            <form onSubmit={handleSubmit(handleSendParcel)} className='mt-12 p-4 text-black'>
+    <div className='p-5'>
+            <h2 className='text-4xl font-bold mt-5'>Send A Parcel</h2>
+            <form onSubmit={handleSubmit(handleSendParcel)} className='mt-5 px-5 text-black'>
                 {/* parcel type */}
                 <div>
                         <label className="label mr-4">

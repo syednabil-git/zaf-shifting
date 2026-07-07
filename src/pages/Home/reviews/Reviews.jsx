@@ -17,36 +17,49 @@ const Reviews = ({reviewsPromise}) => {
             <p className='text-gray-700 text-center mb-10'>Enhance posture, mobility, and well-being effortlessly with Posture Pro. Achieve proper alignment, reduce pain,<br></br> and strengthen your body with ease!</p>
         </div>
         
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={3}
-        coverflowEffect={{
-          rotate: 10,
-          stretch: '50%',
-          depth: 500,
-          modifier: 1,
-          scale: 0.75,
-          slideShadows: true,
-        }}
-         loop={true}
-         autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
-        className="mySwiper"
-      >
-        {
-            reviews.map(review => <SwiperSlide key={review.id}>
-                <ReviewsCard review={review}></ReviewsCard>
-            </SwiperSlide>)
-        }
-       
-      </Swiper>
-
+     <Swiper
+  effect="coverflow"
+  grabCursor={true}
+  centeredSlides={true}
+  slidesPerView={3}
+  breakpoints={{
+    0: {
+      slidesPerView: 1.2,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        scale: 1,
+        slideShadows: false,
+      },
+    },
+    768: {
+      slidesPerView: 3,
+      coverflowEffect: {
+        rotate: 10,
+        stretch: "50%",
+        depth: 500,
+        modifier: 1,
+        scale: 0.75,
+        slideShadows: true,
+      },
+    },
+  }}
+  loop={true}
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+  }}
+  pagination={true}
+  modules={[EffectCoverflow, Pagination, Autoplay]}
+>
+  {reviews.map((review) => (
+    <SwiperSlide key={review.id}>
+      <ReviewsCard review={review} />
+    </SwiperSlide>
+  ))}
+</Swiper>
     </div>
   )
 }

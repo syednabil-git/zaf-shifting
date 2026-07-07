@@ -14,7 +14,7 @@ const MyParcels = () => {
     const { data: parcels = [], refetch } = useQuery({
         queryKey:['myParcels', user?.email],
         queryFn: async() => {
-            const res = await axiosSecure.get(`/parcels?email = ${user.email}`);
+            const res = await axiosSecure.get(`/parcels?email=${user.email}`);
             return res.data;
         }
     })
@@ -63,7 +63,7 @@ const MyParcels = () => {
 
   return (
     <div>
-        <h2>All of my parcels : {parcels.length}</h2>
+        <h2 className='text-5xl my-5'>All of my parcels : {parcels.length}</h2>
         <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
   <table className="table">
     {/* head */}

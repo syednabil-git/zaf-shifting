@@ -23,7 +23,7 @@ const Navbar = () => {
 
      {
       user && <>
-        <li><NavLink to='/dashboard/my-parcels'>My Parcels</NavLink></li>
+        {/* <li><NavLink to='/dashboard/my-parcels'>My Parcels</NavLink></li> */}
         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
       </>
      }
@@ -59,7 +59,7 @@ const Navbar = () => {
       : <Link to='/login' className='btn ml-3 px-8 py-3 rounded-full border border-[#abd408e3]  text-[#7da409] text-lg font-semibold bg-transparent hover:bg-[#CAEB66] hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(190,242,100,0.15)]'>Login</Link>
 
     }
-    <Link to='rider' className="btn rounded-4xl text-lg bg-[#CAEB66] px-5">Be a Rider</Link>
+    <Link to='rider' className="hidden md:inline-block btn rounded-4xl text-lg bg-[#CAEB66] px-5 text-center py-1">Be a Rider</Link>
   </div>
 </div>
     </div>

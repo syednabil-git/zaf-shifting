@@ -13,9 +13,9 @@ import { Autoplay } from 'swiper/modules';
 const brandLogos = [amazon, casio, randstad, star, start_people, moonstar];
 const Brands = () => {
   return (
-    <div className='max-w-7xl mx-auto p-5 my-5'>
+    <div className='max-w-7xl mx-auto md:p-5 my-5'>
         <div>
-            <h1 className='text-center font-bold text-4xl my-10'>We've helped thousands of sales teams</h1>
+            <h1 className='text-center font-bold text-4xl my-5 md:my-10'>We've helped thousands of sales teams</h1>
         </div>
     
     <Swiper
